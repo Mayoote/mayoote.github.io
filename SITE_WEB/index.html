@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maïtson Pierre – Gameplay Programmer</title>
+    <style>
+        :root {
+            --bg: #0f0f0f;
+            --text: #f1f1f1;
+            --accent: #00aaff;
+            --muted: #888;
+            --font: 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+
+        h2 {
+            color: var(--accent);
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-top: 0.5rem;
+        }
+
+        p {
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .project {
+            background: #1a1a1a;
+            border-left: 4px solid var(--accent);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2.5rem;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 20px rgba(0, 170, 255, 0.15);
+        }
+
+        .project h3 {
+            margin: 0 0 0.3rem 0;
+            color: var(--accent);
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 0.5rem 0 0.8rem 0;
+        }
+
+        .tag {
+            background: rgba(0, 170, 255, 0.1);
+            border: 1px solid rgba(0, 170, 255, 0.4);
+            color: var(--accent);
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            user-select: none;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .tag:hover {
+            background: rgba(0, 170, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        ul {
+            margin-top: 0.5rem;
+            padding-left: 1.2rem;
+        }
+
+        ul li {
+            margin-bottom: 0.3rem;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+
+        .video-wrapper iframe,
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+        }
+
+        /* CONTACT SECTION */
+        .contact {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .contact h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .contact a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: var(--accent);
+            font-weight: 500;
+            transition: color 0.2s ease, transform 0.2s ease;
+        }
+
+        .contact a:hover {
+            color: #66ccff;
+            transform: scale(1.05);
+        }
+
+        .linkedin-icon {
+            width: 20px;
+            height: 20px;
+            fill: var(--accent);
+            transition: fill 0.2s ease;
+        }
+
+        .contact a:hover .linkedin-icon {
+            fill: #66ccff;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>MAÏTSON PIERRE</h1>
+        <h2>GAMEPLAY PROGRAMMER</h2>
+        <p>Passionate about creating innovative and optimized gameplay systems.<br>
+            2nd year student at ISART DIGITAL Paris.</p>
+    </header>
+
+    <section class="section">
+
+        <!-- HIT THE MARK -->
+        <div class="project">
+            <h3>HIT THE MARK</h3>
+            <div class="tags">
+                <span class="tag">Godot</span>
+                <span class="tag">C#</span>
+                <span class="tag">Solo</span>
+                <span class="tag">2 weeks</span>
+                <span class="tag">2025</span>
+            </div>
+            <p>This reaction game is designed to improve your hand-eye coordination.</p>
+            <p><strong>The challenges I have faced:</strong></p>
+            <ul>
+                <li>Creating a randomness system that doesn’t frustrate players</li>
+                <li>Tracking metrics and displaying them in graphical form</li>
+                <li>Short development time</li>
+            </ul>
+            <div class="video-wrapper">
+                <video src="videos/GAMEPLAY_16_9.mp4" controls></video>
+            </div>
+        </div>
+
+        <!-- ZAMANDRA -->
+        <div class="project">
+            <h3>ZAMANDRA</h3>
+            <div class="tags">
+                <span class="tag">Godot</span>
+                <span class="tag">C#</span>
+                <span class="tag">Group (3)</span>
+                <span class="tag">3 months</span>
+                <span class="tag">2025</span>
+            </div>
+            <p>This puzzle game is centered around stopping time to solve levels.</p>
+            <p><strong>My contributions:</strong></p>
+            <ul>
+                <li>Programming UI flow</li>
+                <li>Implementing A* pathfinding</li>
+            </ul>
+            <div class="video-wrapper">
+                <video src="videos/9_SONIC_Short.mp4" controls></video>
+            </div>
+        </div>
+
+        <!-- CASINO RUSH -->
+        <div class="project">
+            <h3>CASINO RUSH</h3>
+            <div class="tags">
+                <span class="tag">Godot</span>
+                <span class="tag">C#</span>
+                <span class="tag">Solo</span>
+                <span class="tag">1 month</span>
+                <span class="tag">2025</span>
+            </div>
+            <p>A fast-paced shoot ’em up set in a flashy casino world.</p>
+            <p><strong>The challenges I have faced:</strong></p>
+            <ul>
+                <li>Developing a functional and smooth scrolling system</li>
+                <li>Creating modular and varied enemy attack patterns</li>
+                <li>First full solo project – managing all aspects of development</li>
+            </ul>
+            <div class="video-wrapper">
+                <video src="videos/SHMUP_CLOSING_KIT_EDITED.mp4" controls></video>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+        <h3>Contact</h3>
+        <a href="https://www.linkedin.com/in/maïtson-pierre-749827300/" target="_blank">
+            <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M100.28 448H7.4V148.9h92.88zm-46.44-341C24.09 107 0 82.9 0 53.7A53.68 53.68 0 0 1 53.84 0C83.06 0 107 24.09 107 53.7c0 29.2-23.94 53.3-53.16 53.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.23-79.2-48.3 0-55.7 37.7-55.7 76.6V448h-92.68V148.9h88.98v40.8h1.3c12.4-23.5 42.48-48.3 87.4-48.3 93.5 0 110.7 61.6 110.7 141.8V448z"/>
+            </svg>
+            LinkedIn – Maïtson Pierre
+        </a>
+    </section>
+
+    <footer>
+        &copy; 2025 Maïtson Pierre — Gameplay Programmer
+    </footer>
+</div>
+</body>
+</html>
