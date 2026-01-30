@@ -170,6 +170,27 @@
             color: var(--muted);
             margin-top: 2rem;
         }
+
+        .header-links {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+            .header-links a {
+                text-decoration: none;
+                color: var(--accent);
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                transition: opacity 0.2s;
+            }
+
+                .header-links a:hover {
+                    opacity: 0.8;
+                }
     </style>
 </head>
 <body>
@@ -177,11 +198,46 @@
     <header>
         <h1>MAÏTSON PIERRE</h1>
         <h2>GAMEPLAY PROGRAMMER</h2>
-        <p>Passionate about creating innovative and optimized gameplay systems.<br>
-            2nd year student at ISART DIGITAL Paris.</p>
+        <p>
+            Passionate about creating innovative and optimized gameplay systems.<br>
+            2nd year student at ISART DIGITAL Paris.
+        </p>
+
+        <div class="header-links">
+            <a href="https://www.linkedin.com/in/maïtson-pierre-749827300/" target="_blank">
+                <svg style="width:18px; height:18px; fill:var(--accent);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M100.28 448H7.4V148.9h92.88zm-46.44-341C24.09 107 0 82.9 0 53.7A53.68 53.68 0 0 1 53.84 0C83.06 0 107 24.09 107 53.7c0 29.2-23.94 53.3-53.16 53.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.23-79.2-48.3 0-55.7 37.7-55.7 76.6V448h-92.68V148.9h88.98v40.8h1.3c12.4-23.5 42.48-48.3 87.4-48.3 93.5 0 110.7 61.6 110.7 141.8V448z" />
+                </svg>
+                LinkedIn
+            </a>
+        </div>
     </header>
 
     <section class="section">
+
+
+        <div class="project">
+            <h3>UNITY CHATBOT (AI AGENT)</h3>
+            <div class="tags">
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag">Inference Engine</span>
+                <span class="tag">Group (4)</span>
+                <span class="tag">1 week</span>
+                <span class="tag">2025</span>
+            </div>
+            <p>An experimental project focused on controlling an in-game agent via a ChatBot, using a local version of GPT-2 to interpret text commands.</p>
+            <p><strong>Key takeaways:</strong></p>
+            <ul>
+                <li>Integrated communication between Unity and a local Inference Engine (LLM)</li>
+                <li>Successfully adapted to a <strong>limited technical documentation</strong></li>
+                <li>Rapid prototyping within a one-week sprint</li>
+                <li>Gained a fundamental understanding of AI model workflows and data processing</li>
+            </ul>
+            <div class="video-wrapper">
+                <video src="videos/Patoune_IA.mp4" controls></video>
+            </div>
+        </div>
 
         <!-- HIT THE MARK -->
         <div class="project">
@@ -218,7 +274,7 @@
             <p>This puzzle game is centered around stopping time to solve levels.</p>
             <p><strong>My contributions:</strong></p>
             <ul>
-                <li>Programming UI flow</li>
+                <li>Coding UI flow</li>
                 <li>Implementing A* pathfinding</li>
             </ul>
             <div class="video-wrapper">
@@ -239,7 +295,7 @@
             <p>A fast-paced shoot ’em up set in a flashy casino world.</p>
             <p><strong>The challenges I have faced:</strong></p>
             <ul>
-                <li>Developing a functional and smooth scrolling system</li>
+                <li>Coding a functional and smooth scrolling system</li>
                 <li>Creating modular and varied enemy attack patterns</li>
                 <li>First full solo project – managing all aspects of development</li>
             </ul>
@@ -251,7 +307,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="contact">
+    <!--<section class="contact">
         <h3>Contact</h3>
         <a href="https://www.linkedin.com/in/maïtson-pierre-749827300/" target="_blank">
             <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -259,7 +315,7 @@
             </svg>
             LinkedIn – Maïtson Pierre
         </a>
-    </section>
+    </section>-->
 
     <footer>
         &copy; 2025 Maïtson Pierre — Gameplay Programmer
